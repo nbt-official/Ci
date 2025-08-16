@@ -1,5 +1,5 @@
 {
-  "name": "download-link-worker",
+  "name": "download-link-resolver-worker",
   "version": "1.0.0",
   "description": "Cloudflare Worker to resolve direct and Google Drive download links.",
   "main": "src/worker.js",
