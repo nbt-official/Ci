@@ -1,0 +1,21 @@
+# wrangler.toml
+
+name = "download-link-resolver" # Your worker's name (must be unique across Cloudflare)
+main = "src/worker.js"         # Path to your worker's JavaScript file
+compatibility_date = "2024-08-16" # Use a recent date to get the latest runtime features
+
+# Optional: Add any environment variables or secrets here if your worker needs them.
+# For example, if you later decide to store the token as a secret:
+# [vars]
+# SOME_API_KEY = "your_key_value"
+
+# Or if you need secrets (best practice for sensitive data):
+# [secrets]
+# CLOUDFLARE_API_TOKEN # This would be set via `wrangler secret put CLOUDFLARE_API_TOKEN`
+
+# If you have multiple environments (e.g., development, production)
+# [env.production]
+# name = "download-link-resolver-prod"
+
+# [env.staging]
+# name = "download-link-resolver-staging"
